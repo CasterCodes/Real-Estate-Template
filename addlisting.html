@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <script src="https://kit.fontawesome.com/97d12c645f.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/styles/styles.css">
+      <title>Real Estate - Add Listing</title>
+   </head>
+   <body>
+      <!-- Banner begins here -->
+      <div class="pages">
+         <!-- header begins -->
+         <div class="header-wrapper">
+            <div class="container">
+               <div class="header-title">
+                  <a href="index.html">Real Home</a>
+               </div>
+               <div class="header-links">
+                  <ul class="links">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="properties.html">Listing</a></li>
+                     <li><a href="agents.html">Agents</a></li>
+                     <li class="login"><a href="login.html">Login</a></li>
+                     <li class="special"><a href="addlisting.html">Add Listing</a></li>
+                  </ul>
+                  <ul class="menus">
+                     <button><i class="fa fa-bars"></i></button>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- header ends here -->
+         <!-- Side navigation container -->
+         <div class="side-navigation">
+            <div class="navigation-cross">
+               <div class="container">
+                  <i class="fas fa-times"></i>
+               </div>
+            </div>
+            <div class="navigation-header">
+               <div class="container">
+                  <h2 class="navigation-title">Real Home</h2>
+                  <p class='navigation-text'>You deserver a nice home</p>
+               </div>
+            </div>
+            <div class="side-links">
+               <ul>
+                  <li>
+                     <div class="container">
+                        <a href="index.html">Home</a>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="container"><a href="properties.html">Listing</a></div>
+                  </li>
+                  <li>
+                     <div class="container"><a href="agents.html">Agents</a></div>
+                  </li>
+                  <li class="login">
+                     <div class="container"><a href="login.html">Login</a></div>
+                  </li>
+                  <li class="special">
+                     <div class="container"><a href="addlisting.html">Add Listing</a></div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- pages ends here -->
+      <div class="dashboard">
+         <div class="container">
+            <div class="dashboard-header">
+               <h2 class="dash-board-title">
+                  Dashboard
+               </h2>
+               <div class="dashboard-side-navigation">
+                  <button><i class="fa fa-bars"></i></button>
+               </div>
+            </div>
+            <div class="dashboard-content">
+               <div class="dashboard-left dashboard-left-pro">
+                  <div class="close-dashboard-nav">
+                     <i class="fas fa-times"> 
+                     </i>
+                  </div>
+                  <div class="dashboard-left-header">
+                     <img src="images/agents/default.jpg" alt="">
+                     <p>Maxine Johnson <span>(Admin)</span></p>
+                  </div>
+                  <div class="dashboard-left-content">
+                     <ul>
+                        <li>
+                           <a href="dashboard.html">
+                              <i class="fas fa-chart-line"></i>
+                              <p>Dashboard</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="profile.html">
+                              <i class="far fa-user"></i> 
+                              <p>My Profile</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="messages.html">
+                              <i class="far fa-envelope"></i>
+                              <p>Messages</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="mylisting.html">
+                              <i class="far fa-list-alt"></i>
+                              <p>My Listing</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" class='dropdown'>
+                              <i class="fas fa-layer-group"></i>
+                              <p>Listing</p>
+                              <i class="fas fa-chevron-down dashboard-more"></i>
+                           </a>
+                           <ul class='dropdown-content'>
+                              <li>
+                                 <a href="addlisting.html">
+                                    <i class="fas fa-plus"></i>
+                                    <p>Add Listing</p>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="dashboard_properties.html">
+                                    <i class="far fa-list-alt"></i>
+                                    <p>All listing</p>
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="" class='dropdown'>
+                              <i class="fas fa-users"></i>
+                              <p>Agents</p>
+                              <i class="fas fa-chevron-down dashboard-more"></i>
+                           </a>
+                           <ul class='dropdown-content'>
+                              <li>
+                                 <a href="dashboard_agents.html">
+                                    <i class="far fa-list-alt"></i>
+                                    <p>All Agents</p>
+                                 </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="password.html">
+                              <i class="fas fa-unlock-alt"></i>
+                              <p>Change Password</p>
+                           </a>
+                        </li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="dashboard-right">
+                  <div class="dashboard-right-header">
+                     <h2 class="dashboard-right-title">
+                        Add Listing
+                     </h2>
+                  </div>
+                  <div class="add-listing">
+                     <form action="" class="form">
+                        <div class="description-container">
+                           <div class="description-header">
+                              <h2>Description</h2>
+                           </div>
+                           <div class="description-content">
+                              <div class="description-top">
+                                 <div class="form-group">
+                                    <label for="">Property Title  <span>(required)</span></label>
+                                    <input type="text" class='form-input' >
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="">Property Price  <span>(required)</span></label>
+                                    <input type="text" class='form-input' >
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="">Category  <span>(required)</span></label>
+                                    <select name="category" id="" class="form-select">
+                                       <option disabled selected>None</option>
+                                       <option>Apartment</option>
+                                       <option>House</option>
+                                       <option>Land</option>
+                                    </select>
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="">Listed In  <span>(required)</span></label>
+                                    <select name="none" id="" class="form-select">
+                                       <option disabled selected>None</option>
+                                       <option>Rental</option>
+                                       <option>Sales</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="description-bottom">
+                                 <div class="form-group">
+                                    <label for="">Description <span>(required)</span></label>
+                                    <textarea name="" id="" cols="30" rows="10" class='form-textarea'>
+                                    </textarea>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="location-container">
+                           <div class="location-header">
+                              <h2>Property Location</h2>
+                           </div>
+                           <div class="location-content">
+                              <div class="location-top">
+                                 <div class="form-group">
+                                    <label for="">Address  <span>(required)</span></label>
+                                    <input type="text" class='form-input' >
+                                 </div>
+                              </div>
+                              <div class="location-bottom">
+                                 <div class="form-group">
+                                    <label for="">County<span>(required)</span></label>
+                                    <input type="text" class='form-input' >
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="">Town<span>(required)</span></label>
+                                    <input type="text" class='form-input' >
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="">Latitude<span>(for google maps)</span></label>
+                                    <input type="text" class='form-input' >
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="">Longitude<span>(for google maps)</span></label>
+                                    <input type="text" class='form-input' >
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="media-container">
+                           <div class="media-header">
+                              <h2>Property Images</h2>
+                           </div>
+                           <div class="media-content">
+                              <div class="form-group">
+                                 <label for="">Images</label>
+                                 <input type="file" class='listing-file' >
+                                 <button class='upload-listing-files'>Upload Files</button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="details-container">
+                           <div class="details-header">
+                              <h2>Property Details</h2>
+                           </div>
+                           <div class="details-content">
+                              <div class="form-group">
+                                 <label for="">Rooms</span></label>
+                                 <input type="text" class='form-input' >
+                              </div>
+                              <div class="form-group">
+                                 <label for="">Bedrooms</label>
+                                 <input type="text" class='form-input' >
+                              </div>
+                              <div class="form-group">
+                                 <label for="">Bathrooms</span></label>
+                                 <input type="text" class='form-input' >
+                              </div>
+                              <div class="form-group">
+                                 <label for="">Structure Type</span></label>
+                                 <select name="none" id="" class="form-select">
+                                    <option disabled selected>Not Available</option>
+                                    <option>Brick</option>
+                                    <option>Wood</option>
+                                    <option>Cement</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="footer-container">
+                           <div class="form-group">
+                              <input type="submit" value='Submit Property' >
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Login section ends -->
+      <section class="footer">
+         <div class="container">
+            <div class="footer-content">
+               <div>
+                  <h2 class="footer-header-title">
+                     Real Home
+                  </h2>
+                  <p>1337 Tengecha Road,Nairobi.Imarisha Tower, Second Floor, Room 135</p>
+                  <ul class='footer-contact-info'>
+                     <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+254720843306</p>
+                     </li>
+                     <li>
+                        <i class="fab fa-whatsapp"></i> 
+                        <p>+254720843306</p>
+                     </li>
+                     <li>
+                        <i class="far fa-envelope"></i> 
+                        <p>realhome@gmail.com</p>
+                     </li>
+                  </ul>
+               </div>
+               <div>
+                  <h2 class="footer-header-subtitle">
+                     Quick Links
+                  </h2>
+                  <ul class='quick-links'>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="properties.html">Properties</a></li>
+                     <li><a href="agents.html">Agents</a></li>
+                     <li><a href="faqs.html">FAQS</a></li>
+                     <li><a href="dashboard.html">Account</a></li>
+                     <li><a href="login.html">Login</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <h2 class="footer-header-subtitle">
+                     Social Links
+                  </h2>
+                  <ul class='social-links'>
+                     <li><i class="fab fa-facebook-f"></i> <a href="">Facebook</a></li>
+                     <li><i class="fab fa-twitter"></i> <a href="">Twitter</a></li>
+                     <li><i class='fab fa-linkedin'></i> <a href="">Linkedin</a></li>
+                     <li><i class="fab fa-youtube"></i> <a href="">YouTube</a></li>
+                     <li><i class='fab fa-instagram'></i> <a href="">Instagram</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <h2 class="footer-header-subtitle">
+                     Download Apps
+                  </h2>
+                  <div>
+                     <a href="" class='download-app'>
+                        <i class="fab fa-google-play download-icon"></i>
+                        <div>
+                           <h2 class="app-title">Google Play</h2>
+                           <p class='app-subtitle'>Get It Now</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div>
+                     <a href="" class='download-app'>
+                        <i class="fab fa-apple download-icon"></i>
+                        <div class='app-store'>
+                           <h2 class="app-title">App Store</h2>
+                           <p class='app-subtitle'>Get It Now</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="container">
+               <p>&copy; Real Home. All Rights Reserved</p>
+            </div>
+         </div>
+      </section>
+      <script src="/js/main.js"></script>
+      <script src="/js/dashboard-app.js"></script>
+   </body>
+</html>
