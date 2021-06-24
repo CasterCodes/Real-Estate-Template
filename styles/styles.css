@@ -2095,6 +2095,10 @@ h3 {
 /* RESPONSIVE STYLES  */
 /* tablet and ipads */
 @media only screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
   .banner {
     min-height: 100vh;
   }
@@ -2445,6 +2449,10 @@ h3 {
 /* Mobile phones */
 
 @media only screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
   .banner {
     min-height: 100vh;
   }
@@ -2731,7 +2739,18 @@ h3 {
   .details-content {
     flex-direction: column;
   }
-
+  .agent-listing-by-category {
+    background-color: var(--bs-white);
+    border-radius: 2px;
+    box-shadow: var(--primary-box-shadow);
+    margin-bottom: 20px;
+  }
+  .agent-listing-by-category .category-button {
+    padding: 8px 4px;
+  }
+  .category-active {
+    padding: 8px 4px;
+  }
   .description-top .form-group,
   .location-bottom .form-group,
   .details-content .form-group {
@@ -2788,5 +2807,16 @@ h3 {
 
   .message-body-title span:nth-child(2) {
     display: none;
+  }
+
+  .profile-content,
+  .password-change,
+  .add-listing,
+  .agent-listing {
+    padding: 16px;
+  }
+  .agent-listing {
+    box-shadow: none;
+    border-radius: 0px;
   }
 }
